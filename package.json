@@ -8,7 +8,8 @@
     "prebuild": "rimraf public && npm install",
     "build": "webpack --mode production --colors --progress",
     "prestart": "rimraf public && npm install",
-    "start": "webpack-dev-server --mode development --hot --colors --progress"
+    "start": "webpack-dev-server --mode development --hot --colors --progress",
+    "start2": "webpack-dev-server --config webpack.config2.js --mode development --hot --colors --progress"
   },
   "repository": {
     "type": "git",
