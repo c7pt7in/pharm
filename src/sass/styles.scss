@@ -658,27 +658,35 @@ body {
   }
 }
 
-.audit {
+.service {
   padding: 64px 75px;
 }
 
-.audit-heading {
+.service-heading {
   margin-bottom: 20px;
   margin-left: 75px;
+
+  &_registration {
+    margin-bottom: -20px;
+  }
 }
 
-.audit-content {
+.service-content {
   display: flex;
+  margin-bottom: 48px;
 
-  &__text {
+  &__col1 {
     padding-left: 75px;
     margin-right: 62px;
     flex: 0 0 540px;
   }
 
-  &__scheme {
+  &__col2 {
     flex: 0 0 540px;
-    margin-top: 245px;
+
+    &_mt {
+      margin-top: 245px;
+    }
   }
 
   &__schemepic {
@@ -688,15 +696,49 @@ body {
 }
 
 
-.audit-start {
+.service-start {
   position: relative;
 
   &__bg {
     height: 660px;
-    background-image: url('../static/audit-bg.png');
-    background-size: 790px;
     background-repeat: no-repeat;
-    background-position: 0 30px;
+
+    &_1 {
+      background-image: url('../static/audit-bg.png');
+      background-size: 790px;
+      background-position: 0 30px;
+    }
+
+    &_2 {
+      background-image: url('../static/registration-bg.png');
+      background-size: 830px;
+      background-position: 35px 30px;
+    }
+
+    &_3 {
+      background-image: url('../static/examination-bg.png');
+      background-size: 830px;
+      background-position: 35px 30px;
+    }
+
+    &_4 {
+      height: 730px;
+      background-image: url('../static/consulting-bg.png');
+      background-size: 830px;
+      background-position: 35px 30px;
+    }
+
+    &_research {
+      background-image: url('../static/research-bg.png');
+      background-size: 830px;
+      background-position: 35px 30px;
+    }
+
+    &_training {
+      background-image: url('../static/training-bg.png');
+      background-size: 830px;
+      background-position: 35px 30px;
+    }
   }
 
   &__form {
@@ -771,8 +813,8 @@ body {
       width: 56px;
       height: 32px;
       border-radius: 30px;
-      background-image: linear-gradient(90deg, #102397 0%, #187ADF 55%, #00EAF8 100%);
-      box-shadow: inset 0 1px 3px 0 rgba(10,28,130,0.50);
+      background: #5e6f7e;
+      box-shadow: inset 0 1px 3px 0 rgba(54, 54, 54, .50);
     }
 
     &:after {
@@ -789,6 +831,11 @@ body {
     }
 
     &:checked {
+      &:before {
+        background-image: linear-gradient(90deg, #102397 0%, #187adf 55%, #00eaf8 100%);
+        box-shadow: inset 0 1px 3px 0 rgba(10, 28, 130, .50);
+      }
+
       &:after {
         left: -15px;
       }
