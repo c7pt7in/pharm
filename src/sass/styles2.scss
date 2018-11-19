@@ -1,0 +1,34 @@
+.news {
+
+}
+
+.news-heading {
+    margin-top: 64px;
+    margin-left: 158px;
+}
+
+.block-news {
+    margin-top: 60px;
+    background-image: url('../static/news-bg.png');
+    background-size: 600px;
+    background-position: 120px 37px;
+    padding-left: 576px;
+    height: 600px;
+
+    .block__content {
+        background-image: url('../static/news-1.png');
+        background-size: 800px;
+        background-position: 0 0;
+        padding: 100px 0 0 110px;
+        position: relative;
+
+        .block__text {
+            position: absolute;
+            width: 540px;
+            height: 241px;
+            top: 100px;
+            left: 180px;
+            background-color: #ccc;
+        }
+    }
+}
