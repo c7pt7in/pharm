@@ -826,7 +826,7 @@ body {
       height: 24px;
       width:  24px;
       top: 4px;
-      left: 7px;
+      left: -15px;
       transition: left .2s ease;
     }
 
@@ -837,8 +837,18 @@ body {
       }
 
       &:after {
-        left: -15px;
+        left: 7px;
       }
     }
   }
+}
+
+.caption-list {
+  font-size: 20px;
+  color: #476397;
+  margin: 0 0 35px;
+}
+
+.article {
+  padding: 64px 150px;
 }
