@@ -1,34 +1,67 @@
 .news {
+    padding: 64px 75px;
 
-}
+    .news-heading {
+        margin-left: 152px;
+    }
 
-.news-heading {
-    margin-top: 64px;
-    margin-left: 158px;
-}
+    .block-news-img {
+        background-image: url('../static/news-bg.png');
+        background-size: 600px;
+        background-position: 63px 37px;
+        padding-left: 490px;
+        height: 550px;
+    
+        .block__content {
+            background-image: url('../static/news-1.png');
+            background-size: 800px;
+            background-position: 0 0;
+            padding: 100px 0 0 110px;
+            position: relative;
+    
+            .block__text {
+                position: absolute;
+                width: 540px;
+                height: 241px;
+                top: 110px;
+                left: 190px;
+            }
 
-.block-news {
-    margin-top: 60px;
-    background-image: url('../static/news-bg.png');
-    background-size: 600px;
-    background-position: 120px 37px;
-    padding-left: 576px;
-    height: 600px;
+            .block__details-btn {
+                width: 136px;
+                margin: 220px 210px;
+            }
+        }
+    }
 
-    .block__content {
-        background-image: url('../static/news-1.png');
-        background-size: 800px;
-        background-position: 0 0;
-        padding: 100px 0 0 110px;
-        position: relative;
+    .news-content {
+        display: flex;
+        padding-left: 75px;
+        margin-bottom: 48px;
+    
+        &__col1 {
+            flex: 0 0 540px;
+            padding-left: 25px;
+            margin-right: 60px;
+        }
+    
+        &__col2 {
+            flex: 0 0 540px;
+        }
+    }
 
-        .block__text {
-            position: absolute;
-            width: 540px;
-            height: 241px;
-            top: 100px;
-            left: 180px;
-            background-color: #ccc;
+    .loadmore {
+        display: flex;
+        justify-content: center;
+        height: 46px;
+
+        &__btn {
+            border: 2px solid #476397;
+            border-radius: 23px;
+            line-height: 46px;
+            font-size: 18px;
+            color: #476397;
+            flex: 0 0 208px;
         }
     }
 }
