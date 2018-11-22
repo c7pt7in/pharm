@@ -1,5 +1,6 @@
 .news {
     padding: 64px 75px;
+    background-color: #fff;
 
     .news-heading {
         margin-left: 75px;
@@ -108,30 +109,7 @@
 
 .news-article {
     padding: 64px 75px;
-
-    .news-back {
-        margin-left: 40px;
-        margin-bottom: 10px;
-        position: relative;
-
-        &:after {
-           content: "";
-           position: absolute;
-           background-image: url('../static/news-back.png');
-           background-repeat: no-repeat;
-           background-size: 30px 12px;
-           width: 30px;
-           height: 12px;
-           top: 12px;
-           left: 0;
-        }
-
-        &:hover {
-            &::after {
-                background-image: url('../static/news-back-hovered.png');
-            }
-        }
-    }
+    background-color: #fff;
 
     .article-heading {
         margin-left: 75px;
@@ -151,6 +129,30 @@
     
         &__col2 {
             flex: 0 0 540px;
+        }
+    }
+}
+
+.back-btn {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:after {
+       content: "";
+       position: absolute;
+       background-image: url('../static/news-back.png');
+       background-repeat: no-repeat;
+       background-size: 30px 12px;
+       width: 30px;
+       height: 12px;
+       top: 12px;
+       left: 0;
+    }
+
+    &:hover {
+        &::after {
+            background-image: url('../static/news-back-hovered.png');
         }
     }
 }
