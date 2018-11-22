@@ -1,8 +1,9 @@
 .news {
     padding: 64px 75px;
+    background-color: #fff;
 
     .news-heading {
-        margin-left: 100px;
+        margin-left: 75px;
     }
 
     .block-news-img {
@@ -36,13 +37,12 @@
 
     .news-content {
         display: flex;
-        padding-left: 75px;
-        margin-bottom: 60px;
+        padding-left: 50px;
+        margin-bottom: 85px;
     
-        &__col1 {
+        &__col1,
+        &__col2 {
             flex: 0 0 540px;
-            padding-left: 25px;
-            margin-right: 60px;
             position: relative;
 
             &:hover {
@@ -64,27 +64,17 @@
                 }
             }
         }
+
+        &__col1 {
+            padding-left: 25px;
+            margin-right: 60px;
+        }
     
         &__col2 {
-            flex: 0 0 540px;
-            position: relative;
-
             &:hover {
                 &:before {
-                    content: "";
-                    background-image: url('../static/new-more.png');
-                    background-repeat: no-repeat;
-                    background-size: 650px 400px;
-                    width: 650px;
-                    height: 400px;
-                    position: absolute;
-                    top: -60px;
+                    content: ""; 
                     left: -80px;
-                    z-index: -1;
-                }
-
-                .details-btn {
-                    opacity: 1;
                 }
             }
         }
@@ -103,7 +93,7 @@
 
     .loadmore {
         display: flex;
-        justify-content: center;
+        padding-left: 510px;
         height: 46px;
 
         &__btn {
@@ -113,6 +103,37 @@
             font-size: 18px;
             color: #476397;
             flex: 0 0 208px;
+        }
+    }
+}
+
+.news-article {
+    padding: 64px 75px;
+    background-color: #fff;
+
+    .news-back {
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .article-heading {
+        margin-left: 75px;
+        margin-bottom: 16px;
+    }
+
+    .article-content {
+        display: flex;
+        padding-left: 50px;
+        margin-bottom: 85px;
+    
+        &__col1 {
+            padding-left: 25px;
+            margin-right: 60px;
+            flex: 0 0 540px;
+        }
+    
+        &__col2 {
+            flex: 0 0 540px;
         }
     }
 }
