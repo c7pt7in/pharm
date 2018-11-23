@@ -89,26 +89,10 @@
             }
         }
     }
-
-    .loadmore {
-        display: flex;
-        padding-left: 510px;
-        height: 46px;
-
-        &__btn {
-            border: 2px solid #476397;
-            border-radius: 23px;
-            line-height: 46px;
-            font-size: 18px;
-            color: #476397;
-            flex: 0 0 208px;
-        }
-    }
 }
 
-.news-article {
+.article {
     padding: 64px 75px;
-    background-color: #ccc;
 
     .article-heading {
         margin-left: 75px;
@@ -140,13 +124,30 @@
         margin-left: 75px;
     }
 
+    .article-content {
+        margin-bottom: 46px;
+
+        &__col1 {
+            background-image: url('../static/meeting-img-2.png');
+            background-size: 540px;
+            background-position: 0 -12px;
+            background-repeat: no-repeat;
+            height: 834px;
+        }
+
+        &__col2 {
+            .article-content__row {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
     .block-business {
         background-image: url('../static/meetings-bg.png');
         background-size: 750px;
         background-position: -20px 10px;
         padding-left: 490px;
         height: 500px;
-        background-color: pink;
     
         .block__content {
             background-image: url('../static/meetings-1.png');
@@ -192,5 +193,20 @@
         &::after {
             background-image: url('../static/news-back-hovered.png');
         }
+    }
+}
+
+.loadmore {
+    display: flex;
+    padding-left: 510px;
+    height: 46px;
+
+    &__btn {
+        border: 2px solid #476397;
+        border-radius: 23px;
+        line-height: 46px;
+        font-size: 18px;
+        color: #476397;
+        flex: 0 0 208px;
     }
 }
