@@ -8,14 +8,14 @@
     .block-news {
         background-image: url('../static/news-bg.png');
         background-size: 700px;
-        background-position: 0 -20px;
+        background-position: -20px -20px;
         padding-left: 490px;
-        height: 550px;
+        height: 500px;
     
         .block__content {
             background-image: url('../static/news-1.png');
             background-size: 800px;
-            background-position: 0 0;
+            background-position: -20px 0;
             padding: 100px 0 0 110px;
             position: relative;
     
@@ -24,12 +24,12 @@
                 width: 540px;
                 height: 241px;
                 top: 110px;
-                left: 190px;
+                left: 150px;
             }
 
             .block__details-btn {
                 width: 136px;
-                margin: 220px 210px;
+                margin: 220px 170px;
             }
         }
     }
@@ -37,7 +37,7 @@
     .news-content {
         display: flex;
         padding-left: 50px;
-        margin-bottom: 85px;
+        margin-bottom: 70px;
     
         &__col1,
         &__col2 {
@@ -108,7 +108,7 @@
 
 .news-article {
     padding: 64px 75px;
-    background-color: #fff;
+    background-color: #ccc;
 
     .article-heading {
         margin-left: 75px;
@@ -128,6 +128,45 @@
     
         &__col2 {
             flex: 0 0 540px;
+        }
+    }
+}
+
+.business {
+    padding: 64px 75px;
+    background-color: #fff;
+
+    .business-heading {
+        margin-left: 75px;
+    }
+
+    .block-business {
+        background-image: url('../static/meetings-bg.png');
+        background-size: 750px;
+        background-position: -20px 10px;
+        padding-left: 490px;
+        height: 500px;
+        background-color: pink;
+    
+        .block__content {
+            background-image: url('../static/meetings-1.png');
+            background-size: 750px;
+            background-position: 0 20px;
+            padding: 100px 0 0 110px;
+            position: relative;
+    
+            .block__text {
+                position: absolute;
+                width: 540px;
+                height: 241px;
+                top: 130px;
+                left: 150px;
+            }
+
+            .block__details-btn {
+                width: 136px;
+                margin: 30px 140px;
+            }
         }
     }
 }
