@@ -103,6 +103,10 @@
         display: flex;
         padding-left: 50px;
         margin-bottom: 85px;
+
+        &__row {
+            padding-left: 25px;
+        }
     
         &__col1 {
             padding-left: 25px;
@@ -118,7 +122,6 @@
 
 .business {
     padding: 64px 75px;
-    background-color: #fff;
 
     .business-heading {
         margin-left: 75px;
@@ -144,11 +147,25 @@
         }
 
         &__col2_meeting {
+            position: relative;
             background-image: url('../static/meeting-img.png');
             background-size: 540px;
-            background-position: 0 -12px;
+            background-position: -25px -12px;
             background-repeat: no-repeat;
-            height: 800px;
+            height: 560px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url('../static/meeting-title.png');
+                background-size: 537px;
+                background-position: 0 -12px;
+                background-repeat: no-repeat;
+                top: 520px;
+                left: -22px;
+                width: 537px;
+                height: 75px;
+            }
         }
 
         &__col2 {
@@ -185,6 +202,19 @@
                 margin: 30px 140px;
             }
         }
+    }
+}
+
+.laws {
+    padding: 64px 75px;
+    background-color: #ccc;
+
+    .laws-heading {
+        margin-left: 75px;
+    }
+
+    .article-content {
+        margin-bottom: 48px;
     }
 }
 
