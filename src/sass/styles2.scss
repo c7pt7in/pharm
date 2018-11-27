@@ -130,6 +130,11 @@
     .article-content {
         margin-bottom: 46px;
 
+        &__col1 {
+            padding-left: 25px;
+            margin-right: 40px;
+        }
+
         &__col1_meeting-1 {
             background-image: url('../static/meeting-img-2.png');
             background-size: 540px;
@@ -169,6 +174,8 @@
         }
 
         &__col2 {
+            padding-left: 25px;
+
             .article-content__row {
                 margin-bottom: 48px;
             }
@@ -207,7 +214,6 @@
 
 .laws {
     padding: 64px 75px;
-    background-color: #ccc;
 
     .laws-heading {
         margin-left: 75px;
