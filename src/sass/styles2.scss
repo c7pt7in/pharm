@@ -224,6 +224,38 @@
     }
 }
 
+.consultation {
+    background-image: url('../static/contacts_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__bg {
+        background-image: url('../static/contacts_map.png');
+        background-size: 900px;
+        background-position: 35px 30px;
+    }
+
+    &-form {
+        height: 950px;
+        width: 620px;
+        background-image: url('../static/contacts_form.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding: 77px 0 0 132px;
+      
+        &__body {
+          width: 360px;
+        }
+    }
+
+    .service-content {
+        &__col1 {
+            flex: 0 0 700px;
+        }
+    }
+}
+
 .back-btn {
     margin-left: 40px;
     margin-bottom: 10px;
