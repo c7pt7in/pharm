@@ -91,35 +91,6 @@
     }
 }
 
-.article {
-    padding: 64px 75px;
-
-    .article-heading {
-        margin-left: 75px;
-        margin-bottom: 16px;
-    }
-
-    .article-content {
-        display: flex;
-        padding-left: 50px;
-        margin-bottom: 85px;
-
-        &__row {
-            padding-left: 25px;
-        }
-    
-        &__col1 {
-            padding-left: 25px;
-            margin-right: 60px;
-            flex: 0 0 540px;
-        }
-    
-        &__col2 {
-            flex: 0 0 540px;
-        }
-    }
-}
-
 .business {
     padding: 64px 75px;
 
@@ -127,66 +98,11 @@
         margin-left: 75px;
     }
 
-    .article-content {
-        margin-bottom: 46px;
-
-        &__col1 {
-            padding-left: 25px;
-            margin-right: 40px;
-        }
-
-        &__col1_meeting-1 {
-            background-image: url('../static/meeting-img-2.png');
-            background-size: 540px;
-            background-position: 0 -12px;
-            background-repeat: no-repeat;
-            height: 800px;
-        }
-
-        &__col1_meeting-2 {
-            background-image: url('../static/meeting-bg.png');
-            background-size: 540px;
-            background-position: 0 -12px;
-            background-repeat: no-repeat;
-            height: 800px;
-        }
-
-        &__col2_meeting {
-            position: relative;
-            background-image: url('../static/meeting-img.png');
-            background-size: 540px;
-            background-position: -25px -12px;
-            background-repeat: no-repeat;
-            height: 560px;
-
-            &::after {
-                content: '';
-                position: absolute;
-                background-image: url('../static/meeting-title.png');
-                background-size: 537px;
-                background-position: 0 -12px;
-                background-repeat: no-repeat;
-                top: 520px;
-                left: -22px;
-                width: 537px;
-                height: 75px;
-            }
-        }
-
-        &__col2 {
-            padding-left: 25px;
-
-            .article-content__row {
-                margin-bottom: 48px;
-            }
-        }
-    }
-
     .block-business {
         background-image: url('../static/meetings-bg.png');
         background-size: 750px;
-        background-position: -20px 10px;
-        padding-left: 490px;
+        background-position: -30px 10px;
+        padding-left: 455px;
         height: 500px;
     
         .block__content {
@@ -210,17 +126,63 @@
             }
         }
     }
+
+    .service-content {
+        &__col1 {
+            &_meeting-1 {
+                background-image: url('../static/meeting-img-2.png');
+                background-size: 500px;
+                background-position: 50px -12px;
+                background-repeat: no-repeat;
+                height: 800px;
+            }
+
+            &_meeting-2 {
+                background-image: url('../static/meeting-bg.png');
+                background-size: 500px;
+                background-position: 50px -12px;
+                background-repeat: no-repeat;
+                height: 750px;
+            }
+        }
+
+        &__col2 {
+            &_meeting {
+                position: relative;
+                background-image: url('../static/meeting-img.png');
+                background-size: 550px;
+                background-position: -22px -12px;
+                background-repeat: no-repeat;
+                height: 550px;
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../static/meeting-title.png');
+                    background-size: 550px;
+                    background-position: -11px -12px;
+                    background-repeat: no-repeat;
+                    top: 520px;
+                    left: -10px;
+                    width: 550px;
+                    height: 75px;
+                }
+            }
+        }
+    }
 }
 
 .laws {
     padding: 64px 75px;
 
-    .laws-heading {
+    .title {
         margin-left: 75px;
     }
 
-    .article-content {
-        margin-bottom: 48px;
+    .service-content {
+        &__row {
+            margin-left: 75px;
+        }
     }
 }
 
