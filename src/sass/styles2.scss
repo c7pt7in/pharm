@@ -191,10 +191,33 @@
     background-repeat: no-repeat;
     background-size: 100%;
 
-    &__bg_map {
+    &__bg {
         background-image: url('../static/contacts_map.png');
         background-size: 900px;
         background-position: 35px 30px;
+
+        &_contacts {
+            position: relative;
+            padding: 100px 0 0 50px;
+            top: 42px;
+            left: 120px;
+            width: 540px;
+            height: 350px;
+            background-image: url('../static/contacts_address.png');
+            background-repeat: no-repeat;
+            background-size: 540px;
+        }
+
+        &_marker {
+            position: relative;
+            background-image: url('../static/contacts_mark.png');
+            background-repeat: no-repeat;
+            background-size: 370px;
+            height: 130px;
+            width: 370px;
+            top: 85px;
+            left: 220px;
+        }
     }
 
     &-form {
