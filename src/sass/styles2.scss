@@ -210,6 +210,7 @@
 
         &_marker {
             position: relative;
+            padding: 15px 0 0 100px;
             background-image: url('../static/contacts_mark.png');
             background-repeat: no-repeat;
             background-size: 370px;
@@ -231,6 +232,17 @@
       
         &__body {
           width: 360px;
+
+          .close-btn {
+                position: relative;
+                background-image: url('../static/contacts_close-icon.png');
+                background-repeat: no-repeat;
+                background-size: 23px;
+                height: 23px;
+                width: 23px;
+                top: -110px;
+                left: 430px;
+            }
         }
     }
 
