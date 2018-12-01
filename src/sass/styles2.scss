@@ -198,7 +198,7 @@
 
         &_contacts {
             position: relative;
-            padding: 100px 0 0 50px;
+            padding: 50px 0 0 50px;
             top: 42px;
             left: 120px;
             width: 540px;
@@ -221,17 +221,44 @@
         }
     }
 
-    &-form {
-        height: 950px;
-        width: 620px;
-        background-image: url('../static/contacts_form.png');
-        background-size: 100%;
+    .close-btn {
+        background-image: url('../static/contacts_close-icon.png');
+        background-size: 23px;
         background-repeat: no-repeat;
-        background-position: 0 0;
-        padding: 77px 0 0 132px;
+        background-position: 75% 50%;
+        position: absolute;
+        left: 380px;
+        top: 10px;
+        width: 200px;
+        height: 100px;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: #fff;
+            background-image: url('../static/close_icon_hovered.png');
+
+            &:before {
+                content: 'Закрыть';
+                font-weight: bold;
+                position: relative;
+                color: #476397;
+                top: 40%;
+                left: 25%;
+            }
+        }
+    }
+
+    &-form {
+        height: 750px;
+        width: 600px;
+        background-image: url('../static/contacts_form.png');
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: 0 20px;
+        padding: 77px 0 0 110px;
       
         &__body {
-          width: 360px;
+            width: 360px;
         }
     }
 
